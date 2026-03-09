@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Free Guide - Email Signup</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; background: #f8f9fa; text-align: center; padding: 50px 20px; }
+        .container { max-width: 500px; margin: 0 auto; background: white; padding: 40px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        h1 { color: #667eea; margin-bottom: 20px; }
+        p { color: #666; margin-bottom: 30px; }
+        input[type="email"] { width: 100%; padding: 15px; font-size: 16px; border: 2px solid #ddd; border-radius: 5px; margin-bottom: 20px; box-sizing: border-box; }
+        input[type="email"]:focus { border-color: #667eea; outline: none; }
+        button { background: #667eea; color: white; padding: 15px 40px; font-size: 16px; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; }
+        button:hover { background: #5568d3; }
+        .success { display: none; background: #d4edda; color: #155724; padding: 20px; border-radius: 5px; margin-top: 20px; }
+        .privacy { font-size: 12px; color: #999; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📬 Get Your Free Guide</h1>
+        <p>Enter your email to receive the free monetization guide + weekly tips.</p>
+        
+        <form action="https://formspree.io/f/mnqevjdr" method="POST">
+            <input type="email" name="email" placeholder="Enter your email address" required>
+            <input type="hidden" name="_subject" value="New Email Signup - Monetization Guide">
+            <input type="hidden" name="_next" value="https://BattlescarZA.github.io/monetization-guide/thank-you-email.html">
+            <button type="submit">Get Free Guide</button>
+        </form>
+        
+        <p class="privacy">No spam. Unsubscribe anytime. Your email is safe with us.</p>
+    </div>
+</body>
+</html>
